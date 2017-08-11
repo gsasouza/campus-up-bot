@@ -7,7 +7,7 @@ app.get('/on', (req, res)=>{
   res.send('Ligando...');
 })
 
-app.get('off', (req, res)=>{
+app.get('/off', (req, res)=>{
   value = 'off';
   res.send('Desligando...')
 })
