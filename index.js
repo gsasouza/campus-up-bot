@@ -12,7 +12,7 @@ app.get('/off', (req, res)=>{
   value = 'off';
   res.send('Desligando...')
 })
-ap.get('/data', (req, res)=<{
+ap.get('/data', (req, res)=>{
   res.send(value);
 })
 app.get('/', (req, res)=>{
