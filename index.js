@@ -16,4 +16,4 @@ app.get('/', (req, res)=>{
   res.send(value);
 })
 
-app.listen(8000)
+app.listen(process.env.PORT)
