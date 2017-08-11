@@ -15,3 +15,5 @@ app.get('off', (req, res)=>{
 app.get('/', (req, res)=>{
   res.send(value);
 })
+
+app.listen(8000)
