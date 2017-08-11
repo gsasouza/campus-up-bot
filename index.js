@@ -1,6 +1,6 @@
 const app = require('express')();
 
-const value = '';
+let value = '';
 
 app.get('/on', (req, res)=>{
   value = 'on';
