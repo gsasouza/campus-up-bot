@@ -1,0 +1,29 @@
+<!doctype html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
+<link rel="stylesheet" href="/styles.css">
+<script src="https://use.fontawesome.com/4fdc0ba00a.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+  $(document).ready(() => {
+    $(document).on('click', '#data', function () {
+      $(this).toggleClass('is-info');
+      if ($(this).hasClass('is-info')) {
+        $.ajax({
+          url: "/http://campus-up-bot.herokuapp.com/on",
+          type: 'GET',
+          contentType: 'application/json'
+        });
+      } else {
+        $.ajax({
+          url: "/http://campus-up-bot.herokuapp.com/on",
+          type: 'GET',
+          contentType: 'application/json'
+        });
+      }
+    })
+  })
+</script>
+
+<body>
+  <button class="button has-text-centered" id="data">ME APERTE!!</button>
+</body>

@@ -1,5 +1,5 @@
 const app = require('express')();
-
+app.use(cors());
 let value = '';
 
 app.get('/on', (req, res)=>{
@@ -13,7 +13,7 @@ app.get('/off', (req, res)=>{
 })
 
 app.get('/', (req, res)=>{
-  res.send(value);
+  res.sendFile( __dirname + './index.html');
 })
 
 app.listen(process.env.PORT)
